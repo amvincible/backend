@@ -18,7 +18,7 @@
   },
   "scripts": {
     "prestart": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
-    "start": "nodemon Server.js",
+    "start": "nodemon index.js",
     "dev": "nodemon index.js --ignore tests/",
     "seed-up": "npx sequelize-cli db:seed:all",
     "seed-down": "npx sequelize-cli db:seed:undo:all",

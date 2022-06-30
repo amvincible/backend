@@ -7,7 +7,7 @@ env.config({path:"./config/.env"})
 const app = express()
 app.use(express.json());
 app.use(cors());
-
+app.use(express.static("./Public/"))
 app.use("/api",conatctus);
 
 app.get('/')
